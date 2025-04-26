@@ -1,18 +1,16 @@
 import 'dart:ffi';
 
 void main() {
-  /// Conditions:
-  int result = 9;
-  if (result == 11) {
-    print("True(1)");
-  } else if (result > 10) {
-    print("True(2)");
+  /// Loops:
+  /// 0 +1+2+3+4+5 ... 9
+  int sum = 0;
+  for (int i = 0; i <= 10; i++) {
+    print("I is $i");
+    print("Old Sum = $sum");
+    sum = sum + i;
+    print("New Sum = $sum");
+    print("--------------------");
   }
-  
-  ///-------------------------------///
-  if (result > 5) {
-    print("True(3)");
-  } else {
-    print("True(4)");
-  }
+  // print(sum);
 }
+// Hello .. olleh 
