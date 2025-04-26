@@ -3,18 +3,16 @@ import 'dart:ffi';
 void main() {
   /// Conditions:
   int result = 9;
-
-  String message;
-
-  if (result == 10) {
-    print("Excellent ");
-  } else if (result < 10 && result < 8 ) {
-    print("Very Good");
-  } else if (result <= 7 && result >= 4) {
-    print("Good");
-  } else if (result < 10 || result < 8) {
-    print("Bad");
+  if (result == 11) {
+    print("True(1)");
+  } else if (result > 10) {
+    print("True(2)");
+  }
+  
+  ///-------------------------------///
+  if (result > 5) {
+    print("True(3)");
   } else {
-    print("Very bad");
+    print("True(4)");
   }
 }
