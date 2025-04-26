@@ -1,17 +1,20 @@
 import 'dart:ffi';
 
 void main() {
-  /// Inputs (var , dynamic , object)
-  /// DataType inputName = value
-  dynamic input;
-  input = "Ahmed";
-  input = true;
-  Map<String, dynamic> myMap = {};
-  input = null;
+  /// Conditions:
+  int result = 9;
 
-  Object input1 = "Ahmed";
-  input1 = 12;
-  // input1 = null;
+  String message;
 
-  print(input);
+  if (result == 10) {
+    print("Excellent ");
+  } else if (result < 10 && result < 8 ) {
+    print("Very Good");
+  } else if (result <= 7 && result >= 4) {
+    print("Good");
+  } else if (result < 10 || result < 8) {
+    print("Bad");
+  } else {
+    print("Very bad");
+  }
 }
