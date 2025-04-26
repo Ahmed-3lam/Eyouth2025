@@ -1,26 +1,15 @@
 import 'dart:ffi';
 
 void main() {
-  Map<String, dynamic> myMap = {"id": 1, "name": "Ahmed", "dicount": true};
-  List<String> myList = ["Ahmed", "Alaa"];
+  /// Inputs (var , dynamic , object)
+  /// DataType inputName = value
+  String name = "Ahmed";
 
-  List<Map<String, dynamic>> myData = [
-    {"id": 111, "name": "Product1"},
-    {"id": 122, "name": "Product2"},
-    {"id": 133, "name": "Product3"},
-    {"id": 144, "name": "Product4"},
-  ];
+  var input;
+  input = "Ahmed";
+  input = 12;
+  
 
-  print(myList);
-  // print(myMap["name"]);
-
-  // myData.forEach((element) {
-  //   print(element["name"]);
-  // });
+  var input2 = "Ahmed";
+  input2 = 12;
 }
-
-/*
-1- List<> int, string , bool
-2- Map ( key(string) , value () )
-3- List<Map> 
-*/
