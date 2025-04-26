@@ -3,13 +3,15 @@ import 'dart:ffi';
 void main() {
   /// Inputs (var , dynamic , object)
   /// DataType inputName = value
-  String name = "Ahmed";
-
-  var input;
+  dynamic input;
   input = "Ahmed";
-  input = 12;
-  
+  input = true;
+  Map<String, dynamic> myMap = {};
+  input = null;
 
-  var input2 = "Ahmed";
-  input2 = 12;
+  Object input1 = "Ahmed";
+  input1 = 12;
+  // input1 = null;
+
+  print(input);
 }
