@@ -1,13 +1,17 @@
 import 'dart:ffi';
 
 void main() {
-  List<String> names = ["Ahmed", "Mohamed", "Alaa", "AA"];
-  for (int i = 0; i < names.length; i++) {
-  
-    // print(names[i]);
+  /// While
+
+  int input = 10;
+
+  while (input < 10) {
+    print(input);
+      input++;
   }
 
-  for (var item in names) {
-    print(item);
-  }
+  do {
+    print(input);
+    input++;
+  } while (input < 10);
 }
