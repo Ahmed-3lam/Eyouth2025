@@ -1,10 +1,19 @@
 class Car {
   ///
-  late final int id;
-  late String name;
-  late String brand;
-  late String color;
-  late double price;
+   int? id;
+   String? name;
+   String? brand;
+   String? color;
+   double? price;
+
+  Car(this.id, this.brand, this.name, this.color, this.price);
+
+  Car.MyConstructor(){
+
+  }
+   Car.MyConstructor2(){
+
+  }
 
   void move() {
     print("Car is Moving");
@@ -13,6 +22,4 @@ class Car {
   void stop() {
     print("Car is Stopped");
   }
-
-
 }
