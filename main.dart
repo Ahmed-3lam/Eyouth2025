@@ -1,12 +1,24 @@
+import 'animal.dart';
 import 'car.dart';
-import 'person.dart';
-import 'user.dart';
-import 'usersFromServer.dart';
+import 'product.dart';
+import 'user_data.dart';
 
 void main() {
- 
+  UserData signUpData = UserData();
 
+  signUpData.passwordValidation();
 }
 
-/// School (Students - Teachers - Managers)
-/// Subjects (Arabic , English , Math)
+
+
+/// Basic : Dart
+  /// (1) Variables , Functions, Loops, Conditions
+  /// (2) OOP:
+  /// (i) Class - Object ---(Constructor)
+  /// (ii) Inheritance (Super)
+  /// (ii) Encapsulation
+  /// (iii) Abstraction (abstract class)
+  /// Polymorphism:
+  /// Ovverride 
+  
+

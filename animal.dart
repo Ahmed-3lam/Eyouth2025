@@ -1,15 +1,34 @@
 class Animal {
-  final int? id;
-  final String? name;
-  final String color;
+  String id;
+  String name;
 
-  Animal({ this.id,  this.name, required this.color});
+  Animal(
+    this.id,
+    this.name,
+  );
 
   void eat() {
-    print("$name is Eating");
+    print("$name is eating");
   }
 
   void drink() {
-    print("$name is drinking");
+    print("$name is drink");
   }
+}
+
+class Lion extends Animal {
+  Lion(super.id, super.name);
+
+  @override
+  void eat() {
+    super.eat();
+  }
+
+  void printLionName() {
+    super.eat();
+  }
+}
+
+class NewLion extends Lion {
+  NewLion(super.id, super.name);
 }
